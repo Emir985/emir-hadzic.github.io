@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-origin: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    
+}
+$orange: #F29A23;
+$text-color:#ffffff;
+$text-size-h1:50px;
+$text-size-p:17px;
+$body-font:'basic-sans-regular', sans-serif;
+$h1-font:'hero-new-regular', sans-serif;
+
+header {
+    #banner{
+    background-image: url(../images/banner-photo.jpg);
+    background-size: cover;
+    height: 100vh;
+    }
+    h2{
+        color: $text-color;
+        font-family: 'IBM Plex Mono', monospace;
+        position: absolute;
+        bottom: 140px;
+        left: 130px;
+        .tag{
+            color: #6CDEF0;
+        }
+        .me{
+            color: $orange;
+        }
+    }
+    #nav{
+        position: fixed;
+        width: 100vw;
+        color: $text-color;
+        height: auto;
+        z-index: 2;
+        display: flex;
+        flex-direction: row;
+
+        
+        background-color: rgba(0, 0, 0, 0.589);
+        
+        
+        
+        img{
+            width: 100px;
+            height: 60px;
+            
+        }
+
+        #li-1{
+           margin-left: 800px;
+        }
+        li{
+            
+            display: inline-block;
+            padding:15px;
+            font-size: 23px;
+            font-family: 'hero-new-light', sans-serif;
+            text-align: center;
+            a{
+                color: $text-color;
+                text-decoration: none;
+                
+            }
+            
+            a:hover{
+                
+            color: #000000;
+            cursor: pointer;
+            transition: 0.8s;
+            }
+            
+        }
+        li:hover{
+            background-color: $text-color;
+            color: #000000;
+            cursor: pointer;
+            transition: 0.8s;
+        }
+        
+        
+        #cv{
+            color: $orange;
+            padding-right: 25px;
+            a{
+                padding: 5px;
+                color: inherit;
+                &:hover{
+                    background-color: $orange;
+                    color: #000000;
+                }
+            }
+            
+        }
+        #cv:hover{
+            background-color: $orange;
+            color: #000000;
+        }
+    
+        
+    }
+   
+}
+
+   
+    #about-me{
+        height: 2280px;
+        display: grid;
+        grid-template-columns:10px  300px 400px 10px;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 110px 175px;
+        grid-template-areas: 
+        ". parhead1 image1  ."
+        ". image2 parhead2  ."
+        ". parhead3 image3 ."
+        ". icons icons .";
+        
+        .am-head{
+            margin-top: 50px;
+            margin-left: 50px;
+            padding-left: 45px;
+            text-align: left;
+            font-size: $text-size-h1;
+            font-family: $h1-font;
+            font-weight: normal;
+        }
+        .about-me-1{
+            
+            font-size: $text-size-p;
+            color: $text-color;
+            background-color:rgba(0, 0, 0, 0.75) ;
+            padding: 50px;
+            width: 375px;
+            font-family: $body-font;
+            line-height: 27px;
+            
+        }
+        .parhead-1{
+            width: 475px;
+            display: block;
+            grid-area: parhead1;
+            z-index: 1;
+        }
+        .basketball{
+            margin-top: 80px;
+            
+            grid-area: image1;
+            width: 700px;
+            height:477px;
+            box-shadow: -30px 30px $orange;
+        }
+        
+        .about-me-2{
+            height: 347px;
+            margin-top: 30px;
+            margin-left: 225px;
+            font-size: $text-size-p;
+            color: $text-color;
+            background-color:rgba(0, 0, 0, 0.75) ;
+            padding: 50px;
+            width: 375px;
+            font-family: $body-font;
+            line-height: 31px;
+        }
+        .games{
+              grid-area: image2;
+              
+              width: 700px;
+              height:477px;
+              box-shadow: 30px 30px $orange;
+            
+        }
+        .parhead-2{
+            height: 477px;
+            width: 720px;
+            grid-area: parhead2;
+            z-index: 1;
+        }
+        
+        .skill-head{
+            
+            text-align: center;
+            font-size: $text-size-h1;
+            font-family: $h1-font;
+            font-weight: normal;
+            
+        }
+        .skill-par{
+            
+            font-size: $text-size-p;
+            color: $text-color;
+            background-color:rgba(0, 0, 0, 0.75) ;
+            padding: 50px;
+            width: 375px;
+            height: 347px;
+            line-height: 23px;
+            font-family: $body-font;
+        }
+        .parhead-3{
+            display: block;
+            grid-area: parhead3;
+            z-index: 1;
+            width: 475px;
+        }
+        .monitors{
+            margin-top: 28px;
+            display: block;
+            grid-area: image3;
+            width: 700px;
+            height:477px;
+            box-shadow: -30px 30px $orange;
+            
+        }
+    #icons{
+        margin: 150px;
+        margin-left: 160px;
+        width: 800px;
+        grid-area: icons;
+    }
+}
+    
+    #design-process{
+        width: 90%;
+        height: 725px;
+        margin-left: 85px;
+        display: grid;
+        grid-template-columns:  25% 25% 25% ;
+        grid-template-rows: 70px 150px;
+        grid-row-gap:50px ;
+        grid-column-gap:120px ;
+        grid-template-areas:
+        ". des-proc-h ."
+        "user-research prototyping coding-website";
+        .design-process-head{
+            
+            grid-area: des-proc-h;
+            font-size: $text-size-h1;
+            font-family: $h1-font;
+            font-weight: normal;
+            width: 460px;
+            
+        }
+        h2{
+            font-family: $h1-font;
+            font-weight: normal;
+            
+        }
+        p{
+            z-index: 1;
+        font-size: $text-size-p;
+        color: $text-color;
+        background-color:rgba(0, 0, 0, 0.75) ;
+        padding: 20px;
+        width: 268px;
+        height: 260px;
+        line-height: 20px;
+        font-family: $body-font;
+        }
+        img{
+            width: 298px;
+            height:191px;
+            box-shadow: 10px 10px $orange;
+        }
+        #user-research{
+            margin: 10px;
+            margin-left: 50px;
+            width: 320px;
+            height: 526px;
+            grid-area: user-research;
+            
+        }
+        #prototyping{
+            margin: 10px;
+            margin-left: 50px;
+            width: 320px;
+            height:526px;
+            grid-area: prototyping;
+        }
+        #coding-website{
+            margin: 10px;
+            margin-left: 50px;
+            width: 320px;
+            height:526px;
+            grid-area: coding-website;
+        }
+    }
+
+    #portfolio{
+        
+        width: 100%;
+        display: grid;
+        grid-template-columns: 13% 10% 60% 10% 10% ;
+        grid-template-rows: 70px 300px 500px;
+        grid-row-gap: 20px;
+        grid-template-areas: 
+        ". . port-head . ."
+        ". . portfolio-pic . ."
+        ". left-arrow portfolio-p right-arrow ." ;
+    h1{
+        padding-left: 265px;
+        grid-area: port-head;
+        font-family: $h1-font;
+        font-size: $text-size-h1;
+        font-weight: normal;
+
+    }
+    .left-arrow{
+        grid-area: left-arrow;
+        width:70px;
+        height: 60px;
+        .left-arrow:hover{
+            cursor: pointer;
+        }
+    }
+    .right-arrow{
+        grid-area: right-arrow;
+        width:70px;
+        height: 60px;
+        .right-arrow:hover{
+            cursor: pointer;
+        }
+    }
+    .svalegaarden-pic{
+        width: 800px;
+        grid-area: portfolio-pic;
+    }
+    .svalegaarden{
+        margin-top:100px ;
+        margin-left: 110px;
+        grid-area: portfolio-p;
+        height: 300px;
+        width: 535px;
+        box-shadow:30px 30px #96192B ;
+        border:1px solid #000000;
+        line-height: 30px;
+        p{
+            
+            font-family: $body-font;
+            font-size: $text-size-p;
+            padding: 50px;
+            color: #000000;
+            
+        }
+    }
+    .ungdomsringen-pic{
+        width: 800px;
+        grid-area: portfolio-pic;
+        display: none;
+    }
+    .ungdomsringen{
+        margin-top:100px ;
+        display: none;
+        grid-area: portfolio-p;
+        width: 535px;
+        box-shadow:30px 30px #0A0A0A ;
+        border:1px solid #000000;
+        margin-left: 120px;
+        height: 300px;
+        line-height: 28px;
+        
+        p{
+            font-family: $body-font;
+            font-size: $text-size-p;
+            padding: 50px;
+            color: #000000;
+            
+        }
+    }
+    .diabetes-pic{
+        display: none;
+        width: 500px;
+        grid-area: portfolio-pic;
+        margin-left: 120px;
+    }
+    .diabetes{
+        margin-top:100px ;
+        display: none;
+        grid-area: portfolio-p;
+        width: 535px;
+        height: 280px;
+        box-shadow:30px 30px #AA182C ;
+        margin-left: 120px;
+        border:1px solid #000000;
+        line-height: 30px;
+        p{
+            text-align: left;
+            font-size: $text-size-p;
+            padding: 50px;
+            color: #000000;
+            border: #707070;
+            font-family: $body-font;
+
+        }
+    }
+    }
+
+footer{
+    
+    width: 100%;
+    clear: both;
+    background-color: #072A40;
+    color: $text-color;
+    height: 150px;
+    .footer-links{
+        
+        .foot-logo{
+            margin: 10px 0 20px 700px ;
+            width: 100px;
+            height: 60px;
+        }
+        width: 100%;
+        height:150px;
+        ul{
+            font-family: 'IBM Plex Mono', monospace;
+            vertical-align: middle;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 100vw;
+            height:55px;
+            li{
+                
+                width: 155px;
+            }
+        }
+        
+    }
+    
+    img{
+        width: 40px;
+        height: 40px;
+    }
+ }
+
+.line-break{
+    margin:90px 0 90px 260px ;
+    width: 1000px ;
+    border-top:10px solid #6CDEF0;
+    border-radius: 10px;
+    
+}
