@@ -424,8 +424,14 @@ footer{
             width: 100vw;
             height:55px;
             li{
-                
-                width: 155px;
+                width: 200px;
+                a{
+                    color: #ffffff;
+                    text-decoration: none;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
             }
         }
         

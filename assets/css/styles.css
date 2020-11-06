@@ -487,7 +487,16 @@ footer .footer-links ul {
 }
 
 footer .footer-links ul li {
-  width: 155px;
+  width: 200px;
+}
+
+footer .footer-links ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer .footer-links ul li a:hover {
+  cursor: pointer;
 }
 
 footer img {
