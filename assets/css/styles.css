@@ -102,7 +102,7 @@ header #nav #cv:hover {
 }
 
 #about-me {
-  height: 2280px;
+  height: 50%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 10px  300px 400px 10px;
