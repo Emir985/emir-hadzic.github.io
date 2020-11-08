@@ -83,7 +83,6 @@ header #nav li:hover {
 
 header #nav #cv {
   color: #F29A23;
-  padding-right: 25px;
 }
 
 header #nav #cv a {
@@ -102,6 +101,7 @@ header #nav #cv:hover {
 }
 
 #about-me {
+  overflow: hidden;
   height: 50%;
   display: -ms-grid;
   display: grid;

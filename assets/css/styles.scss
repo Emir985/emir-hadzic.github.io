@@ -5,6 +5,7 @@
     overflow-x: hidden;
     scroll-behavior: smooth;
     
+    
 }
 $orange: #F29A23;
 $text-color:#ffffff;
@@ -18,6 +19,7 @@ header {
     background-image: url(../images/banner-photo.jpg);
     background-size: cover;
     height: 100vh;
+    
     }
     h2{
         color: $text-color;
@@ -86,7 +88,7 @@ header {
         
         #cv{
             color: $orange;
-            padding-right: 25px;
+            
             a{
                 padding: 5px;
                 color: inherit;
@@ -109,6 +111,7 @@ header {
 
    
     #about-me{
+        overflow: hidden;
         height: 50%;
         display: grid;
         grid-template-columns:10px  300px 400px 10px;
