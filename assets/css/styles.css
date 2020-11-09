@@ -102,6 +102,7 @@ header #nav #cv:hover {
 }
 
 #about-me {
+  overflow:hidden;
   height: 2280px;
   display: -ms-grid;
   display: grid;
@@ -110,7 +111,10 @@ header #nav #cv:hover {
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-gap: 110px 175px;
-      grid-template-areas: ". parhead1 image1  ." ". image2 parhead2  ." ". parhead3 image3 ." ". icons icons .";
+      grid-template-areas: ". parhead1 image1  ."
+ ". image2 parhead2  ."
+ ". parhead3 image3 ."
+ ". icons icons .";
 }
 
 #about-me .am-head {
@@ -246,7 +250,8 @@ header #nav #cv:hover {
       grid-template-rows: 70px 150px;
   grid-row-gap: 50px;
   grid-column-gap: 120px;
-      grid-template-areas: ". des-proc-h ." "user-research prototyping coding-website";
+      grid-template-areas: ". des-proc-h ."
+ "user-research prototyping coding-website";
 }
 
 #design-process .design-process-head {
@@ -322,7 +327,9 @@ header #nav #cv:hover {
   -ms-grid-rows: 70px 300px 500px;
       grid-template-rows: 70px 300px 500px;
   grid-row-gap: 20px;
-      grid-template-areas: ". . port-head . ." ". . portfolio-pic . ." ". left-arrow portfolio-p right-arrow .";
+      grid-template-areas: ". . port-head . ."
+ ". . portfolio-pic . ."
+ ". left-arrow portfolio-p right-arrow .";
 }
 
 #portfolio h1 {
